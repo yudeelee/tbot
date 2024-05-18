@@ -9,7 +9,9 @@ export default function Home() {
   const TOKEN = '7001153040:AAFlV8F1uLQh0wH-5fWcJsq6v8FZI6-Gzz4';
   const BASE_URL = `https://api.telegram.org/bot${TOKEN}/`;
 
-  console.log(`${BASE_URL}`);
+  console.log(
+    `${BASE_URL}setWebhook?url=https://tbot-gules.vercel.app/api/bot`
+  );
 
   const [data, setData] = useState();
 
